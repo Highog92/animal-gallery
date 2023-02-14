@@ -14,9 +14,9 @@ window.addEventListener("load", initApp);
 
 // din kode her 
 const myCardElement = document.getElementById('app');
-
+console.log(myCardElement)
 let eleArt = document.createElement('article');
-eleArt.classList.add('elepantCard');
+eleArt.classList.add('galleryCard');
 
 let eleHeadline = document.createElement('h2');
 eleHeadline.innerText = myData.name;
@@ -25,7 +25,7 @@ let eleImg = document.createElement('img');
 myImage.src = myData.image;
 myImage.alt = myData.name;
 
-let eleP =document.createElement('p');
+let eleP = document.createElement('p');
 eleP.innerText = myData.description;
 
 
