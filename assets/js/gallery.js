@@ -13,9 +13,27 @@ window.addEventListener("load", initApp);
 
 
 // din kode her 
+const myCardElement = document.getElementById('app');
+
+let eleArt = document.createElement('article');
+eleArt.classList.add('elepantCard');
+
+let eleHeadline = document.createElement('h2');
+eleHeadline.innerText = myData.name;
+
+let eleImg = document.createElement('img');
+myImage.src = myData.image;
+myImage.alt = myData.name;
+
+let eleP =document.createElement('p');
+eleP.innerText = myData.description;
 
 
-
+myCardElement.appendChild(eleArt)
+eleArt.appendChild(eleHeadline)
+eleArt.appendChild(eleImg)
+eleArt.appendChild(eleP)
+console.log(myCardElement)
 
 
 /*  get data function  DO NOT TOUCH!!!!! ......................................................
